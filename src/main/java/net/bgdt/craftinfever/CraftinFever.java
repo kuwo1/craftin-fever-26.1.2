@@ -1,5 +1,6 @@
 package net.bgdt.craftinfever;
 
+import net.bgdt.craftinfever.block.FeverBlocks;
 import net.bgdt.craftinfever.creativemodetab.FeverCreativeModeTabs;
 import net.bgdt.craftinfever.item.FeverItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,6 +19,7 @@ public class CraftinFever implements ModInitializer {
         FeverCreativeModeTabs.registerFeverCreativeModeTabs();
 
         FeverItems.registerFeverItems();
+        FeverBlocks.registerFeverBlocks();
 
 
 		LOGGER.info("Berry boot up systems online");

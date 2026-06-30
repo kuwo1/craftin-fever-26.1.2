@@ -1,6 +1,7 @@
 package net.bgdt.craftinfever.creativemodetab;
 
 import net.bgdt.craftinfever.CraftinFever;
+import net.bgdt.craftinfever.block.FeverBlocks;
 import net.bgdt.craftinfever.item.FeverItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -24,11 +25,11 @@ public class FeverCreativeModeTabs {
 
     public static final CreativeModeTab STRAWBERRY_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
                 Identifier.fromNamespaceAndPath(CraftinFever.MOD_ID, "strawberry_blocks"),
-                FabricCreativeModeTab.builder().icon(() -> new ItemStack(FeverItems.OMELETTE))
+                FabricCreativeModeTab.builder().icon(() -> new ItemStack(FeverBlocks.WHITE_QUILT_BLOCK))
                         .title(Component.translatable("creativemodetab.craftinfever.strawberry_blocks"))
                         .displayItems((parameters, output) -> {
 
-                            output.accept(FeverItems.OMELETTE);
+                            output.accept(FeverBlocks.WHITE_QUILT_BLOCK);
                         })
                         .build());
 

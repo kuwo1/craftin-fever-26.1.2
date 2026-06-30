@@ -1,5 +1,6 @@
 package net.bgdt.craftinfever.datagen;
 
+import net.bgdt.craftinfever.block.FeverBlocks;
 import net.bgdt.craftinfever.item.FeverItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -14,6 +15,7 @@ public class FeverModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
+        blockModelGenerators.createTrivialCube(FeverBlocks.WHITE_QUILT_BLOCK);
 
     }
 

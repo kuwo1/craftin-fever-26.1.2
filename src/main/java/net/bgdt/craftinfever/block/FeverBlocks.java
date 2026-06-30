@@ -19,6 +19,15 @@ public class FeverBlocks {
     public static final Block WHITE_QUILT_BLOCK = registerBlock("white_quilt_block",
             properties -> new Block(properties.strength(4f)
                     .sound(SoundType.WOOL)));
+    public static final Block LIGHT_GRAY_QUILT_BLOCK = registerBlock("light_gray_quilt_block",
+            properties -> new Block(properties.strength(4f)
+                    .sound(SoundType.WOOL)));
+    public static final Block GRAY_QUILT_BLOCK = registerBlock("gray_quilt_block",
+            properties -> new Block(properties.strength(4f)
+                    .sound(SoundType.WOOL)));
+    public static final Block BLACK_QUILT_BLOCK = registerBlock("black_quilt_block",
+            properties -> new Block(properties.strength(4f)
+                    .sound(SoundType.WOOL)));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){

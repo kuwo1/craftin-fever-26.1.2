@@ -16,6 +16,9 @@ public class FeverModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         blockModelGenerators.createTrivialCube(FeverBlocks.WHITE_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.LIGHT_GRAY_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.GRAY_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.BLACK_QUILT_BLOCK);
 
     }
 

@@ -30,6 +30,9 @@ public class FeverCreativeModeTabs {
                         .displayItems((parameters, output) -> {
 
                             output.accept(FeverBlocks.WHITE_QUILT_BLOCK);
+                            output.accept(FeverBlocks.LIGHT_GRAY_QUILT_BLOCK);
+                            output.accept(FeverBlocks.GRAY_QUILT_BLOCK);
+                            output.accept(FeverBlocks.BLACK_QUILT_BLOCK);
                         })
                         .build());
 

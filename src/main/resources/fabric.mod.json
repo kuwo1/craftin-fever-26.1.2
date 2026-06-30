@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "craftinfever",
+	"version": "${version}",
+	"name": "Craftin Fever",
+	"description": "This is BGDT's take on cabin fever as a mod",
+	"authors": [
+		"BGDT"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT-License",
+	"icon": "assets/craftinfever/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bgdt.craftinfever.CraftinFever"
+		],
+		"fabric-datagen": [
+			"net.bgdt.craftinfever.CraftinFeverDataGenerator"
+		]
+	},
+	"mixins": [
+		"craftinfever.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

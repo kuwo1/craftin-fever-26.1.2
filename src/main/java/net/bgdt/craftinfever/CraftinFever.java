@@ -1,5 +1,6 @@
 package net.bgdt.craftinfever;
 
+import net.bgdt.craftinfever.item.FeverItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -9,19 +10,17 @@ import org.slf4j.LoggerFactory;
 
 public class CraftinFever implements ModInitializer {
 	public static final String MOD_ID = "craftinfever";
-
-
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
+        FeverItems.registerFeverItems();
 
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Berry boot up systems online");
 	}
 
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
 }
-//frog time!

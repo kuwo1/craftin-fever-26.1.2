@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "craftinfever",
 	"version": "${version}",
-	"name": "Craftin Fever",
+	"name": "Craftin' Fever",
 	"description": "This is BGDT's take on cabin fever as a mod",
 	"authors": [
 		"BGDT"

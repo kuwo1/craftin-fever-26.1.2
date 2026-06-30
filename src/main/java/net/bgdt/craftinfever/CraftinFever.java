@@ -1,5 +1,6 @@
 package net.bgdt.craftinfever;
 
+import net.bgdt.craftinfever.creativemodetab.FeverCreativeModeTabs;
 import net.bgdt.craftinfever.item.FeverItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class CraftinFever implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        FeverCreativeModeTabs.registerFeverCreativeModeTabs();
+
         FeverItems.registerFeverItems();
 
 

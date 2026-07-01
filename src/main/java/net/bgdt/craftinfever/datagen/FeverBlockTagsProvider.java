@@ -33,5 +33,18 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
                 .add(FeverBlocks.CYAN_QUILT_BLOCK)
                 .add(FeverBlocks.MAGENTA_QUILT_BLOCK);
 
+
+        valueLookupBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(FeverBlocks.AMERICAN_BEECH_LOG);
+
+        valueLookupBuilder(BlockTags.LOGS)
+                .add(FeverBlocks.AMERICAN_BEECH_LOG);
+
+        valueLookupBuilder(BlockTags.LEAVES)
+                .add(FeverBlocks.AMERICAN_BEECH_LEAVES);
+
+        valueLookupBuilder(BlockTags.PLANKS)
+                .add(FeverBlocks.AMERICAN_BEECH_PLANKS);
+
     }
 }

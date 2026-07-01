@@ -45,6 +45,9 @@ public class FeverCreativeModeTabs {
                             output.accept(FeverBlocks.LIME_QUILT_BLOCK);
                             output.accept(FeverBlocks.CYAN_QUILT_BLOCK);
                             output.accept(FeverBlocks.MAGENTA_QUILT_BLOCK);
+                            output.accept(FeverBlocks.AMERICAN_BEECH_LOG);
+                            output.accept(FeverBlocks.AMERICAN_BEECH_LEAVES);
+                            output.accept(FeverBlocks.AMERICAN_BEECH_PLANKS);
                         })
                         .build());
 

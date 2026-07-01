@@ -28,6 +28,9 @@ public class FeverBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(FeverBlocks.RED_QUILT_BLOCK);
         dropSelf(FeverBlocks.ORANGE_QUILT_BLOCK);
         dropSelf(FeverBlocks.GREEN_QUILT_BLOCK);
+        dropSelf(FeverBlocks.LIME_QUILT_BLOCK);
+        dropSelf(FeverBlocks.CYAN_QUILT_BLOCK);
+        dropSelf(FeverBlocks.MAGENTA_QUILT_BLOCK);
 
     }
 }

@@ -42,6 +42,21 @@ public class FeverBlocks {
     public static final Block PINK_QUILT_BLOCK = registerBlock("pink_quilt_block",
             properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL).mapColor(MapColor.COLOR_PINK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block BROWN_QUILT_BLOCK = registerBlock("brown_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_BROWN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block YELLOW_QUILT_BLOCK = registerBlock("yellow_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_YELLOW).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block RED_QUILT_BLOCK = registerBlock("red_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_RED).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block ORANGE_QUILT_BLOCK = registerBlock("orange_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_ORANGE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block GREEN_QUILT_BLOCK = registerBlock("green_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_GREEN).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){

@@ -23,6 +23,11 @@ public class FeverModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(FeverBlocks.LIGHT_BLUE_QUILT_BLOCK);
         blockModelGenerators.createTrivialCube(FeverBlocks.PURPLE_QUILT_BLOCK);
         blockModelGenerators.createTrivialCube(FeverBlocks.PINK_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.BROWN_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.YELLOW_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.RED_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.ORANGE_QUILT_BLOCK);
+        blockModelGenerators.createTrivialCube(FeverBlocks.GREEN_QUILT_BLOCK);
 
     }
 

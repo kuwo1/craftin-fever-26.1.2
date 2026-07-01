@@ -23,7 +23,12 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
                 .add(FeverBlocks.LIGHT_BLUE_QUILT_BLOCK)
                 .add(FeverBlocks.BLUE_QUILT_BLOCK)
                 .add(FeverBlocks.PURPLE_QUILT_BLOCK)
-                .add(FeverBlocks.PINK_QUILT_BLOCK);
+                .add(FeverBlocks.PINK_QUILT_BLOCK)
+                .add(FeverBlocks.BROWN_QUILT_BLOCK)
+                .add(FeverBlocks.YELLOW_QUILT_BLOCK)
+                .add(FeverBlocks.RED_QUILT_BLOCK)
+                .add(FeverBlocks.ORANGE_QUILT_BLOCK)
+                .add(FeverBlocks.GREEN_QUILT_BLOCK);
 
     }
 }

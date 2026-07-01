@@ -11,6 +11,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
@@ -18,16 +20,16 @@ public class FeverBlocks {
 
     public static final Block WHITE_QUILT_BLOCK = registerBlock("white_quilt_block",
             properties -> new Block(properties.strength(0.8f)
-                    .sound(SoundType.WOOL)));
+                    .sound(SoundType.WOOL).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().mapColor(MapColor.SNOW)));
     public static final Block LIGHT_GRAY_QUILT_BLOCK = registerBlock("light_gray_quilt_block",
             properties -> new Block(properties.strength(0.8f)
-                    .sound(SoundType.WOOL)));
+                    .sound(SoundType.WOOL).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().mapColor(MapColor.COLOR_LIGHT_GRAY)));
     public static final Block GRAY_QUILT_BLOCK = registerBlock("gray_quilt_block",
             properties -> new Block(properties.strength(0.8f)
-                    .sound(SoundType.WOOL)));
+                    .sound(SoundType.WOOL).instrument(NoteBlockInstrument.GUITAR).ignitedByLava().mapColor(MapColor.COLOR_GRAY)));
     public static final Block BLACK_QUILT_BLOCK = registerBlock("black_quilt_block",
             properties -> new Block(properties.strength(0.8f)
-                    .sound(SoundType.WOOL)));
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_BLACK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){

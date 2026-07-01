@@ -17,16 +17,16 @@ import java.util.function.Function;
 public class FeverBlocks {
 
     public static final Block WHITE_QUILT_BLOCK = registerBlock("white_quilt_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL)));
     public static final Block LIGHT_GRAY_QUILT_BLOCK = registerBlock("light_gray_quilt_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL)));
     public static final Block GRAY_QUILT_BLOCK = registerBlock("gray_quilt_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL)));
     public static final Block BLACK_QUILT_BLOCK = registerBlock("black_quilt_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL)));
 
 

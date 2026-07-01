@@ -30,6 +30,12 @@ public class FeverBlocks {
     public static final Block BLACK_QUILT_BLOCK = registerBlock("black_quilt_block",
             properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL).mapColor(MapColor.COLOR_BLACK).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block BLUE_QUILT_BLOCK = registerBlock("blue_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_BLUE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block LIGHT_BLUE_QUILT_BLOCK = registerBlock("light_blue_quilt_block",
+            properties -> new Block(properties.strength(0.8f)
+                    .sound(SoundType.WOOL).mapColor(MapColor.COLOR_LIGHT_BLUE).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){

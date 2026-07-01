@@ -14,6 +14,7 @@ public class CraftinFeverDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(FeverModelProvider::new);
         pack.addProvider(FeverBlockTagsProvider::new);
         pack.addProvider(FeverBlockLootTableProvider::new);
+        pack.addProvider(FeverFeatures::new);
 
 	}
 }

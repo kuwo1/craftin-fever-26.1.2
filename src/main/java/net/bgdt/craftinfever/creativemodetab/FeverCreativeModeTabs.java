@@ -33,6 +33,8 @@ public class FeverCreativeModeTabs {
                             output.accept(FeverBlocks.LIGHT_GRAY_QUILT_BLOCK);
                             output.accept(FeverBlocks.GRAY_QUILT_BLOCK);
                             output.accept(FeverBlocks.BLACK_QUILT_BLOCK);
+                            output.accept(FeverBlocks.LIGHT_BLUE_QUILT_BLOCK);
+                            output.accept(FeverBlocks.BLUE_QUILT_BLOCK);
                         })
                         .build());
 

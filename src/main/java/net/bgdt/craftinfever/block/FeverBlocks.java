@@ -68,17 +68,18 @@ public class FeverBlocks {
     public static final Block MAGENTA_QUILT_BLOCK = registerBlock("magenta_quilt_block",
             properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL).mapColor(MapColor.COLOR_MAGENTA).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
-    public static final Block AMERICAN_BEECH_LOG = registerBlock("american_beech_log",
-            properties -> new Block(properties.strength(4f)
-                    .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
     public static final Block AMERICAN_BEECH_LEAVES = registerBlock("american_beech_leaves",
             p -> new TintedParticleLeavesBlock(0.01F, p));
     public static final Block AMERICAN_BEECH_PLANKS = registerBlock("american_beech_planks",
             properties -> new Block(properties.strength(4f)
                     .sound(SoundType.MOSS_CARPET).mapColor(MapColor.COLOR_BROWN)));
+    public static final Block AMERICAN_BEECH_LOG = registerBlock("american_beech_log",
+            properties -> new RotatedPillarBlock(properties.strength(4f)
+                    .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
 
 
-    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function){
+
+    private static Block registerBlock(String name, Function<BlockBehaviour.Properties, ? extends Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(CraftinFever.MOD_ID, name))));
         registerBlockItem(name, toRegister);
         return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(CraftinFever.MOD_ID, name), toRegister);

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
 
 public class FeverModelProvider extends FabricModelProvider {
     public FeverModelProvider(FabricPackOutput output) {
@@ -31,9 +32,11 @@ public class FeverModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(FeverBlocks.LIME_QUILT_BLOCK);
         blockModelGenerators.createTrivialCube(FeverBlocks.CYAN_QUILT_BLOCK);
         blockModelGenerators.createTrivialCube(FeverBlocks.MAGENTA_QUILT_BLOCK);
-        blockModelGenerators.createTrivialCube(FeverBlocks.AMERICAN_BEECH_LOG);
         blockModelGenerators.createTrivialCube(FeverBlocks.AMERICAN_BEECH_LEAVES);
         blockModelGenerators.createTrivialCube(FeverBlocks.AMERICAN_BEECH_PLANKS);
+        blockModelGenerators.createAxisAlignedPillarBlock(FeverBlocks.AMERICAN_BEECH_LOG, TexturedModel.CUBE_TOP_BOTTOM);
+
+
 
     }
 

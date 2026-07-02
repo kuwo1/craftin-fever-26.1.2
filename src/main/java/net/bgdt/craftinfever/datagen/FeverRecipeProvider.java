@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
@@ -143,8 +144,21 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .pattern("F")
                         .define('F', FeverBlocks.AMERICAN_BEECH_LOG)
                         .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_LOG), has(FeverBlocks.AMERICAN_BEECH_LOG))
-                        .group("wool")
+                        .group("wood")
                         .save(output, "american_beech_planks");
+                shaped(RecipeCategory.MISC, Items.STICK,4)
+                        .pattern("F")
+                        .pattern("F")
+                        .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
+                        .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .group("wood");
+                shaped(RecipeCategory.MISC, Blocks.CRAFTING_TABLE)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
+                        .unlockedBy(getHasName(Blocks.CRAFTING_TABLE), has(Blocks.CRAFTING_TABLE))
+                        .group("wood");
+
 
 
 

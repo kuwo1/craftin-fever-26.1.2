@@ -3,6 +3,7 @@ package net.bgdt.craftinfever;
 import net.bgdt.craftinfever.datagen.FeverBlockLootTableProvider;
 import net.bgdt.craftinfever.datagen.FeverBlockTagsProvider;
 import net.bgdt.craftinfever.datagen.FeverModelProvider;
+import net.bgdt.craftinfever.datagen.FeverRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -15,6 +16,7 @@ public class CraftinFeverDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(FeverBlockTagsProvider::new);
         pack.addProvider(FeverBlockLootTableProvider::new);
         pack.addProvider(FeverFeatures::new);
+        pack.addProvider(FeverRecipeProvider::new);
 
 	}
 }

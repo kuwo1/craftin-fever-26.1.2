@@ -90,6 +90,55 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.BROWN_WOOL), has(Blocks.BROWN_WOOL))
                         .group("wool")
                         .save(output, "brown_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.YELLOW_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.YELLOW_WOOL)
+                        .unlockedBy(getHasName(Blocks.YELLOW_WOOL), has(Blocks.YELLOW_WOOL))
+                        .group("wool")
+                        .save(output, "yellow_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.RED_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.RED_WOOL)
+                        .unlockedBy(getHasName(Blocks.RED_WOOL), has(Blocks.RED_WOOL))
+                        .group("wool")
+                        .save(output, "red_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.ORANGE_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.ORANGE_WOOL)
+                        .unlockedBy(getHasName(Blocks.ORANGE_WOOL), has(Blocks.ORANGE_WOOL))
+                        .group("wool")
+                        .save(output, "orange_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.GREEN_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.GREEN_WOOL)
+                        .unlockedBy(getHasName(Blocks.GREEN_WOOL), has(Blocks.GREEN_WOOL))
+                        .group("wool")
+                        .save(output, "green_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.LIME_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.LIME_WOOL)
+                        .unlockedBy(getHasName(Blocks.LIME_WOOL), has(Blocks.LIME_WOOL))
+                        .group("wool")
+                        .save(output, "lime_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.CYAN_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.CYAN_WOOL)
+                        .unlockedBy(getHasName(Blocks.CYAN_WOOL), has(Blocks.CYAN_WOOL))
+                        .group("wool")
+                        .save(output, "cyan_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.MAGENTA_QUILT_BLOCK,4)
+                        .pattern("FF")
+                        .pattern("FF")
+                        .define('F', Blocks.MAGENTA_WOOL)
+                        .unlockedBy(getHasName(Blocks.MAGENTA_WOOL), has(Blocks.MAGENTA_WOOL))
+                        .group("wool")
+                        .save(output, "magenta_quilt_block");
 
 
 

@@ -139,6 +139,12 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Blocks.MAGENTA_WOOL), has(Blocks.MAGENTA_WOOL))
                         .group("wool")
                         .save(output, "magenta_quilt_block");
+                shaped(RecipeCategory.MISC, FeverBlocks.AMERICAN_BEECH_PLANKS,4)
+                        .pattern("F")
+                        .define('F', FeverBlocks.AMERICAN_BEECH_LOG)
+                        .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_LOG), has(FeverBlocks.AMERICAN_BEECH_LOG))
+                        .group("wool")
+                        .save(output, "american_beech_planks");
 
 
 

@@ -158,6 +158,7 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
                         .unlockedBy(getHasName(Blocks.CRAFTING_TABLE), has(Blocks.CRAFTING_TABLE))
                         .group("wood");
+                
 
 
 

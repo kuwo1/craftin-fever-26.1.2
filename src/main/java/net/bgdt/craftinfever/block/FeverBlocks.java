@@ -71,10 +71,10 @@ public class FeverBlocks {
     public static final Block AMERICAN_BEECH_LEAVES = registerBlock("american_beech_leaves",
             p -> new TintedParticleLeavesBlock(0.01F, p));
     public static final Block AMERICAN_BEECH_PLANKS = registerBlock("american_beech_planks",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(2f,3.0f)
                     .sound(SoundType.MOSS_CARPET).mapColor(MapColor.COLOR_BROWN)));
     public static final Block AMERICAN_BEECH_LOG = registerBlock("american_beech_log",
-            properties -> new RotatedPillarBlock(properties.strength(4f)
+            properties -> new RotatedPillarBlock(properties.strength(2f,3.0f)
                     .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
 
 

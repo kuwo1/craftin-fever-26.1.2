@@ -44,5 +44,6 @@ public class FeverModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(FeverItems.STRAWBERRY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(FeverItems.OMELETTE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(FeverItems.FELT, ModelTemplates.FLAT_ITEM);
     }
 }

@@ -15,6 +15,7 @@ import java.util.function.Function;
 public class FeverItems {
     public static final Item STRAWBERRY = registerItem("strawberry", Item::new);
     public static final Item OMELETTE = registerItem("omelette", Item::new);
+    public static final Item FELT = registerItem("felt", Item::new);
 
 
 
@@ -31,6 +32,7 @@ public class FeverItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(fabricCreativeModeTabOutput -> {
             fabricCreativeModeTabOutput.accept(STRAWBERRY);
             fabricCreativeModeTabOutput.accept(OMELETTE);
+            fabricCreativeModeTabOutput.accept(FELT);
         });
 
 

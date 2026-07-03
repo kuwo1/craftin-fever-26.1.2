@@ -20,6 +20,7 @@ public class FeverCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(FeverItems.STRAWBERRY);
                         output.accept(FeverItems.OMELETTE);
+                        output.accept(FeverItems.FELT);
                     })
                     .build());
 

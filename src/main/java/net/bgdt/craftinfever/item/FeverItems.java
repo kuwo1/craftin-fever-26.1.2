@@ -1,6 +1,7 @@
 package net.bgdt.craftinfever.item;
 
 import net.bgdt.craftinfever.CraftinFever;
+import net.bgdt.craftinfever.food.FeverFoods;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -13,9 +14,11 @@ import net.minecraft.world.item.Item;
 import java.util.function.Function;
 
 public class FeverItems {
-    public static final Item STRAWBERRY = registerItem("strawberry", Item::new);
+    public static final Item STRAWBERRY = registerItem("strawberry", properties -> new Item(properties
+            .food(FeverFoods.STRAWBERRY, FeverFoods.STRAWBERRY_CONSUMABLE)));
     public static final Item OMELETTE = registerItem("omelette", Item::new);
     public static final Item FELT = registerItem("felt", Item::new);
+    public static final Item GRAPES = registerItem("grapes", Item::new);
 
 
 
@@ -33,6 +36,7 @@ public class FeverItems {
             fabricCreativeModeTabOutput.accept(STRAWBERRY);
             fabricCreativeModeTabOutput.accept(OMELETTE);
             fabricCreativeModeTabOutput.accept(FELT);
+            fabricCreativeModeTabOutput.accept(GRAPES);
         });
 
 

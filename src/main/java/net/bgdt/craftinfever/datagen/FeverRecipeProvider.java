@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
@@ -190,6 +191,13 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
                         .unlockedBy(getHasName(Blocks.CRAFTING_TABLE), has(Blocks.CRAFTING_TABLE))
                         .group("wood");
+
+                stairBuilder(FeverBlocks.AMERICAN_BEECH_STAIRS, Ingredient.of(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .group("wood")
+                        .save(output);
+
+                slab(RecipeCategory.BUILDING_BLOCKS, FeverBlocks.AMERICAN_BEECH_SLAB, FeverBlocks.AMERICAN_BEECH_PLANKS);
                 
 
 

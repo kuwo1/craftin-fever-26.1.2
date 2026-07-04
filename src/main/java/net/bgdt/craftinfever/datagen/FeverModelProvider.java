@@ -36,7 +36,9 @@ public class FeverModelProvider extends FabricModelProvider {
         blockModelGenerators.createAxisAlignedPillarBlock(FeverBlocks.AMERICAN_BEECH_LOG, TexturedModel.CUBE_TOP_BOTTOM);
 
         blockModelGenerators.family(FeverBlocks.AMERICAN_BEECH_PLANKS)
-                .slab(FeverBlocks.AMERICAN_BEECH_SLAB);
+                .slab(FeverBlocks.AMERICAN_BEECH_SLAB)
+                .stairs(FeverBlocks.AMERICAN_BEECH_STAIRS);
+
 
 
 

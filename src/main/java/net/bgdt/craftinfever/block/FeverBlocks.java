@@ -76,6 +76,8 @@ public class FeverBlocks {
 
     public static final Block AMERICAN_BEECH_SLAB = registerBlock("american_beech_slab",
             properties -> new SlabBlock(properties.strength(2.0f).requiresCorrectToolForDrops()));
+    public static final Block AMERICAN_BEECH_STAIRS = registerBlock("american_beech_stairs",
+            properties -> new SlabBlock(properties.strength(2.0f).requiresCorrectToolForDrops()));
 
 
 

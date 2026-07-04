@@ -33,8 +33,10 @@ public class FeverModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(FeverBlocks.CYAN_QUILT_BLOCK);
         blockModelGenerators.createTrivialCube(FeverBlocks.MAGENTA_QUILT_BLOCK);
         blockModelGenerators.createTrivialCube(FeverBlocks.AMERICAN_BEECH_LEAVES);
-        blockModelGenerators.createTrivialCube(FeverBlocks.AMERICAN_BEECH_PLANKS);
         blockModelGenerators.createAxisAlignedPillarBlock(FeverBlocks.AMERICAN_BEECH_LOG, TexturedModel.CUBE_TOP_BOTTOM);
+
+        blockModelGenerators.family(FeverBlocks.AMERICAN_BEECH_PLANKS)
+                .slab(FeverBlocks.AMERICAN_BEECH_SLAB);
 
 
 

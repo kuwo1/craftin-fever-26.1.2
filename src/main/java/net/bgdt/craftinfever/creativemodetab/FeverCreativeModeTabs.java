@@ -50,6 +50,8 @@ public class FeverCreativeModeTabs {
                             output.accept(FeverBlocks.AMERICAN_BEECH_LOG);
                             output.accept(FeverBlocks.AMERICAN_BEECH_LEAVES);
                             output.accept(FeverBlocks.AMERICAN_BEECH_PLANKS);
+
+                            output.accept(FeverBlocks.AMERICAN_BEECH_SLAB);
                         })
                         .build());
 

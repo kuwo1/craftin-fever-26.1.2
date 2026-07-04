@@ -8,10 +8,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.TintedParticleLeavesBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -76,6 +73,9 @@ public class FeverBlocks {
     public static final Block AMERICAN_BEECH_LOG = registerBlock("american_beech_log",
             properties -> new RotatedPillarBlock(properties.strength(2f,3.0f)
                     .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
+
+    public static final Block AMERICAN_BEECH_SLAB = registerBlock("american_beech_slab",
+            properties -> new SlabBlock(properties.strength(2.0f).requiresCorrectToolForDrops()));
 
 
 

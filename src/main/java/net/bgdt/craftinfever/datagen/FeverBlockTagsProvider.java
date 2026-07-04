@@ -46,5 +46,7 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
         valueLookupBuilder(BlockTags.PLANKS)
                 .add(FeverBlocks.AMERICAN_BEECH_PLANKS);
 
+
+
     }
 }

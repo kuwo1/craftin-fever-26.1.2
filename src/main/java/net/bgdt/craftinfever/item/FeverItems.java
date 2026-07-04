@@ -16,9 +16,14 @@ import java.util.function.Function;
 public class FeverItems {
     public static final Item STRAWBERRY = registerItem("strawberry", properties -> new Item(properties
             .food(FeverFoods.STRAWBERRY, FeverFoods.STRAWBERRY_CONSUMABLE)));
+    public static final Item GRAPES = registerItem("grapes", properties -> new Item(properties
+            .food(FeverFoods.GRAPES, FeverFoods.GRAPES_CONSUMABLE)));
+
+
     public static final Item OMELETTE = registerItem("omelette", Item::new);
     public static final Item FELT = registerItem("felt", Item::new);
-    public static final Item GRAPES = registerItem("grapes", Item::new);
+
+
 
 
 

@@ -55,6 +55,10 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
         valueLookupBuilder(BlockTags.LEAVES)
                 .add(FeverBlocks.AMERICAN_BEECH_LEAVES);
 
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_AXE)
+                .add(FeverBlocks.AMERICAN_BEECH_LOG)
+                .add(FeverBlocks.AMERICAN_BEECH_PLANKS);
+
 
 
     }

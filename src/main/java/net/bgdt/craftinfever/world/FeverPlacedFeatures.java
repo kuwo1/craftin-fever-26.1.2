@@ -17,8 +17,7 @@ import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 import java.util.List;
 
-import static net.bgdt.craftinfever.world.FeverConfiguredFeatures.registerKey;
-import static net.minecraft.data.worldgen.placement.PlacementUtils.createKey;
+
 
 public class FeverPlacedFeatures {
     public static final ResourceKey<PlacedFeature> AMERICAN_BEECH_PLACED = createKey("american_beech_placed");

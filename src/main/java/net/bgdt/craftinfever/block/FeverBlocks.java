@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -80,6 +81,9 @@ public class FeverBlocks {
     public static final Block AMERICAN_BEECH_STAIRS = registerBlock("american_beech_stairs",
             properties -> new StairBlock(FeverBlocks.AMERICAN_BEECH_PLANKS.defaultBlockState(),
                     properties.strength(3f)));
+
+    //public static final SaplingBlock AMERICAN_BEECH_SAPLING = registerBlock("american_beech_sapling",
+     //       properties -> new SaplingBlock());
 
 
 

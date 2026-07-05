@@ -67,7 +67,7 @@ public class FeverBlocks {
             properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL).mapColor(MapColor.COLOR_MAGENTA).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
     public static final Block AMERICAN_BEECH_LEAVES = registerBlock("american_beech_leaves",
-            p -> new TintedParticleLeavesBlock(0.01F, p .sound(SoundType.CHERRY_LEAVES).strength(0.2f)));
+            p -> new TintedParticleLeavesBlock(0.01F, p .sound(SoundType.CHERRY_LEAVES).strength(0.2f).noOcclusion()));
     public static final Block AMERICAN_BEECH_PLANKS = registerBlock("american_beech_planks",
             properties -> new Block(properties.strength(2f,3.0f)
                     .sound(SoundType.MOSS_CARPET).mapColor(MapColor.COLOR_BROWN)));

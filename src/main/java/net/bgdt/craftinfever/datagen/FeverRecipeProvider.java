@@ -189,8 +189,13 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .pattern("FF")
                         .pattern("FF")
                         .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
-                        .unlockedBy(getHasName(Blocks.CRAFTING_TABLE), has(Blocks.CRAFTING_TABLE))
+                        .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
                         .group("wood");
+                shaped(RecipeCategory.MISC, Items.STRING)
+                        .pattern("FFF")
+                        .define('F',FeverItems.FELT)
+                        .unlockedBy(getHasName(FeverItems.FELT), has(FeverItems.FELT))
+                        .group("felt");
 
                 stairBuilder(FeverBlocks.AMERICAN_BEECH_STAIRS, Ingredient.of(FeverBlocks.AMERICAN_BEECH_PLANKS))
                         .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))

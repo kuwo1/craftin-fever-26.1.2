@@ -38,6 +38,7 @@ public class FeverBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(FeverBlocks.COARSE_GRASS);
         dropSelf(FeverBlocks.COARSE_GRAVEL);
         dropSelf(FeverBlocks.COARSE_SAND);
+        dropSelf(FeverBlocks.GRAPE_BUSH);
 
 
 

@@ -18,6 +18,8 @@ public class FeverItems {
             .food(FeverFoods.STRAWBERRY, FeverFoods.STRAWBERRY_CONSUMABLE)));
     public static final Item GRAPES = registerItem("grapes", properties -> new Item(properties
             .food(FeverFoods.GRAPES, FeverFoods.GRAPES_CONSUMABLE)));
+    public static final Item POPCORN = registerItem("popcorn", properties -> new Item(properties
+            .food(FeverFoods.POPCORN, FeverFoods.POPCORN_CONSUMABLE)));
 
 
     public static final Item OMELETTE = registerItem("omelette", Item::new);

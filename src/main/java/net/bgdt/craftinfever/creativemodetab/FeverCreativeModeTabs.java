@@ -59,6 +59,6 @@ public class FeverCreativeModeTabs {
 
 
     public static void registerFeverCreativeModeTabs() {
-        CraftinFever.LOGGER.info("Registering Creative Mode Tabs for" + CraftinFever.MOD_ID);
+        CraftinFever.LOGGER.info("Registering Creative Mode Tabs for " + CraftinFever.MOD_ID);
     }
 }

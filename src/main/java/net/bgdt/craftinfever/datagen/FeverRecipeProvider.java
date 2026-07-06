@@ -185,17 +185,17 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
                         .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
                         .group("wood");
-                shaped(RecipeCategory.MISC, Blocks.CRAFTING_TABLE)
+                shaped(RecipeCategory.MISC, Blocks.CRAFTING_TABLE,1)
                         .pattern("FF")
                         .pattern("FF")
                         .define('F', FeverBlocks.AMERICAN_BEECH_PLANKS)
                         .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
                         .group("wood");
-                shaped(RecipeCategory.MISC, Items.STRING)
+                shaped(RecipeCategory.MISC, FeverItems.FELT)
                         .pattern("FFF")
-                        .define('F',FeverItems.FELT)
-                        .unlockedBy(getHasName(FeverItems.FELT), has(FeverItems.FELT))
-                        .group("felt");
+                        .define('F',Items.STRING)
+                        .unlockedBy(getHasName(Items.STRING), has(Items.STRING))
+                        .group("string");
 
                 stairBuilder(FeverBlocks.AMERICAN_BEECH_STAIRS, Ingredient.of(FeverBlocks.AMERICAN_BEECH_PLANKS))
                         .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
@@ -203,6 +203,8 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .save(output);
 
                 slab(RecipeCategory.BUILDING_BLOCKS, FeverBlocks.AMERICAN_BEECH_SLAB, FeverBlocks.AMERICAN_BEECH_PLANKS);
+
+
                 
 
 //lalallalalalalala
@@ -215,6 +217,6 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public String getName() {
-        return "CraftinFever Recipes";
+        return "CraftinFever Recipes ";
     }
 }

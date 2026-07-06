@@ -101,6 +101,6 @@ public class FeverBlocks {
 
 
     public static void registerFeverBlocks() {
-        CraftinFever.LOGGER.info("Registering Fever Blocks for" + CraftinFever.MOD_ID);
+        CraftinFever.LOGGER.info("Registering Fever Blocks for " + CraftinFever.MOD_ID);
     }
 }

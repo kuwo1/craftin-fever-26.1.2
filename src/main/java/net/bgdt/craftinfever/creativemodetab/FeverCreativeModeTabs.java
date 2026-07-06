@@ -51,6 +51,9 @@ public class FeverCreativeModeTabs {
                             output.accept(FeverBlocks.AMERICAN_BEECH_LOG);
                             output.accept(FeverBlocks.AMERICAN_BEECH_LEAVES);
                             output.accept(FeverBlocks.AMERICAN_BEECH_PLANKS);
+                            output.accept(FeverBlocks.COARSE_GRASS);
+                            output.accept(FeverBlocks.COARSE_SAND);
+                            output.accept(FeverBlocks.COARSE_GRAVEL);
 
                             output.accept(FeverBlocks.AMERICAN_BEECH_SLAB);
                             output.accept(FeverBlocks.AMERICAN_BEECH_STAIRS);

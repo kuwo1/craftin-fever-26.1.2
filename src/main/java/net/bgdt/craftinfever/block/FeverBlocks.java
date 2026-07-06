@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
@@ -66,6 +67,27 @@ public class FeverBlocks {
     public static final Block MAGENTA_QUILT_BLOCK = registerBlock("magenta_quilt_block",
             properties -> new Block(properties.strength(0.8f)
                     .sound(SoundType.WOOL).mapColor(MapColor.COLOR_MAGENTA).instrument(NoteBlockInstrument.GUITAR).ignitedByLava()));
+    public static final Block COARSE_GRASS = registerBlock("coarse_grass",
+            properties -> new Block(properties.strength(2f)
+                    .sound(SoundType.GRASS).mapColor(MapColor.COLOR_GREEN)));
+    public static final Block COARSE_GRAVEL = registerBlock("coarse_gravel",
+            properties -> new Block(properties.strength(2f)
+                    .sound(SoundType.GRAVEL).mapColor(MapColor.COLOR_GRAY)));
+    public static final Block COARSE_SAND = registerBlock("coarse_sand",
+            properties -> new Block(properties.strength(2f)
+                    .sound(SoundType.SAND).mapColor(MapColor.SAND)));
+    public static final Block GRAPE_BUSH = registerBlock("grape_bush",
+            properties -> new BushBlock(
+                    properties
+                            .strength(1.5F)
+                            .lightLevel(state ->5)
+                            .sound(SoundType.SMALL_AMETHYST_BUD)
+                            .noOcclusion()
+                            .explosionResistance(1.5F)
+                            .pushReaction(PushReaction.DESTROY)));
+
+
+
     public static final Block AMERICAN_BEECH_LEAVES = registerBlock("american_beech_leaves",
             p -> new TintedParticleLeavesBlock(0.01F, p .sound(SoundType.CHERRY_LEAVES).strength(0.2f).noOcclusion()));
     public static final Block AMERICAN_BEECH_PLANKS = registerBlock("american_beech_planks",
@@ -74,6 +96,8 @@ public class FeverBlocks {
     public static final Block AMERICAN_BEECH_LOG = registerBlock("american_beech_log",
             properties -> new RotatedPillarBlock(properties.strength(2f,3.0f)
                     .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
+    //public static final CropBlock CORN = registerBlock("corn",
+     //       properties -> new CropBlock(properties.strength(0.25F)));
 
     public static final Block AMERICAN_BEECH_SLAB = registerBlock("american_beech_slab",
             properties -> new SlabBlock(properties.strength(2.0f).requiresCorrectToolForDrops()));
@@ -104,4 +128,3 @@ public class FeverBlocks {
         CraftinFever.LOGGER.info("Registering Fever Blocks for " + CraftinFever.MOD_ID);
     }
 }
-//11111

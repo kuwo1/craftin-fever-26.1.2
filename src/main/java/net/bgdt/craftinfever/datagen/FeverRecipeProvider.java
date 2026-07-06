@@ -205,7 +205,7 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                 slab(RecipeCategory.BUILDING_BLOCKS, FeverBlocks.AMERICAN_BEECH_SLAB, FeverBlocks.AMERICAN_BEECH_PLANKS);
                 
 
-
+//lalallalalalalala
 
 
 

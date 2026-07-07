@@ -204,6 +204,17 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
 
                 slab(RecipeCategory.BUILDING_BLOCKS, FeverBlocks.AMERICAN_BEECH_SLAB, FeverBlocks.AMERICAN_BEECH_PLANKS);
 
+                doorBuilder(FeverBlocks.AMERICAN_BEECH_DOOR, Ingredient.of(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .group("wood")
+                        .save(output);
+                trapdoorBuilder(FeverBlocks.AMERICAN_BEECH_TRAPDOOR, Ingredient.of(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .unlockedBy(getHasName(FeverBlocks.AMERICAN_BEECH_PLANKS), has(FeverBlocks.AMERICAN_BEECH_PLANKS))
+                        .group("wood")
+                        .save(output);
+
+
+
 
                 
 

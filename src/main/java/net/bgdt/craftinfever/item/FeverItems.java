@@ -20,7 +20,7 @@ public class FeverItems {
             .food(FeverFoods.GRAPES, FeverFoods.GRAPES_CONSUMABLE)));
     public static final Item POPCORN = registerItem("popcorn", properties -> new Item(properties
             .food(FeverFoods.POPCORN, FeverFoods.POPCORN_CONSUMABLE)));
-    public static final Item OMELETTE = registerItem("popcorn", properties -> new Item(properties
+    public static final Item OMELETTE = registerItem("omelette", properties -> new Item(properties
             .food(FeverFoods.OMELETTE, FeverFoods.OMELETTE_CONSUMABLE)));
 
 

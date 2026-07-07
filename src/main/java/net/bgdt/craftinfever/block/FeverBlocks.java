@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -93,6 +94,12 @@ public class FeverBlocks {
     public static final Block AMERICAN_BEECH_PLANKS = registerBlock("american_beech_planks",
             properties -> new Block(properties.strength(2f,3.0f)
                     .sound(SoundType.MOSS_CARPET).mapColor(MapColor.COLOR_BROWN)));
+    public static final Block AMERICAN_BEECH_DOOR = registerBlock("american_beech_door",
+            properties -> new DoorBlock(BlockSetType.BIRCH, properties.strength(2f)
+                    .noOcclusion()));
+    public static final Block AMERICAN_BEECH_TRAPDOOR = registerBlock("american_beech_trapdoor",
+            properties -> new TrapDoorBlock(BlockSetType.BIRCH, properties.strength(2f)
+                    .noOcclusion()));
     public static final Block AMERICAN_BEECH_LOG = registerBlock("american_beech_log",
             properties -> new RotatedPillarBlock(properties.strength(2f,3.0f)
                     .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
@@ -105,6 +112,8 @@ public class FeverBlocks {
     public static final Block AMERICAN_BEECH_STAIRS = registerBlock("american_beech_stairs",
             properties -> new StairBlock(FeverBlocks.AMERICAN_BEECH_PLANKS.defaultBlockState(),
                     properties.strength(3f).sound(SoundType.FLOWERING_AZALEA)));
+
+
 
     //public static final SaplingBlock AMERICAN_BEECH_SAPLING = registerBlock("american_beech_sapling",
      //       properties -> new SaplingBlock());

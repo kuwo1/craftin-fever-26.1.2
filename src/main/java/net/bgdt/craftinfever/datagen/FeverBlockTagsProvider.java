@@ -62,6 +62,12 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
         valueLookupBuilder(BlockTags.CROPS)
                 .add(FeverBlocks.GRAPE_BUSH);
 
+        valueLookupBuilder(BlockTags.DOORS)
+                .add(FeverBlocks.AMERICAN_BEECH_DOOR);
+
+        valueLookupBuilder(BlockTags.TRAPDOORS)
+                .add(FeverBlocks.AMERICAN_BEECH_TRAPDOOR);
+
 
 
     }

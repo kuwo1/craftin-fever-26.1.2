@@ -39,6 +39,9 @@ public class FeverModelProvider extends FabricModelProvider {
                 .slab(FeverBlocks.AMERICAN_BEECH_SLAB)
                 .stairs(FeverBlocks.AMERICAN_BEECH_STAIRS);
 
+        blockModelGenerators.createDoor(FeverBlocks.AMERICAN_BEECH_DOOR);
+        blockModelGenerators.createTrapdoor(FeverBlocks.AMERICAN_BEECH_TRAPDOOR);
+
 
 
 

@@ -20,7 +20,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 public class FeverConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?,?>> AMERICAN_BEECH_TREE = registerKey("american_beech_tree");
 
-    public static void bootstrap(final BootstrapContext<ConfiguredFeature<?,?>> context){
+    public static void configure(final BootstrapContext<ConfiguredFeature<?,?>> context){
         register(context, AMERICAN_BEECH_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(FeverBlocks.AMERICAN_BEECH_LOG),
                 new StraightTrunkPlacer(5, 2,2),
@@ -31,9 +31,7 @@ public class FeverConfiguredFeatures {
     }
 
 
-    public static void configure(BootstrapContext<ConfiguredFeature<?,?>> context){
 
-    }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, Identifier.fromNamespaceAndPath(CraftinFever.MOD_ID, name));

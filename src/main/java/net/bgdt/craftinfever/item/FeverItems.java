@@ -50,6 +50,7 @@ public class FeverItems {
             fabricCreativeModeTabOutput.accept(OMELETTE);
             fabricCreativeModeTabOutput.accept(FELT);
             fabricCreativeModeTabOutput.accept(GRAPES);
+            fabricCreativeModeTabOutput.accept(CIDER);
         });
 
 

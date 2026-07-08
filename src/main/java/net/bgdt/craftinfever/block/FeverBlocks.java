@@ -93,7 +93,7 @@ public class FeverBlocks {
             p -> new TintedParticleLeavesBlock(0.01F, p .sound(SoundType.CHERRY_LEAVES).strength(0.2f).noOcclusion()));
     public static final Block AMERICAN_BEECH_PLANKS = registerBlock("american_beech_planks",
             properties -> new Block(properties.strength(2f,3.0f)
-                    .sound(SoundType.MOSS_CARPET).mapColor(MapColor.COLOR_BROWN)));
+                    .sound(SoundType.CHERRY_WOOD).mapColor(MapColor.COLOR_BROWN)));
     public static final Block AMERICAN_BEECH_DOOR = registerBlock("american_beech_door",
             properties -> new DoorBlock(BlockSetType.BIRCH, properties.strength(2f)
                     .noOcclusion()));

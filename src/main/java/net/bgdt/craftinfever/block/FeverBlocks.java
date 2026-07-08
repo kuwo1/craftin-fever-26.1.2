@@ -115,6 +115,7 @@ public class FeverBlocks {
 
     public static final Block CHICKEN_WIRE = registerBlock("chicken_wire",
             properties -> new IronBarsBlock(properties.strength(4f).sound(SoundType.LANTERN).requiresCorrectToolForDrops()));
+   // public static final DeferredBlock
 
 
 

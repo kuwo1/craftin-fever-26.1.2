@@ -107,11 +107,11 @@ public class FeverBlocks {
      //       properties -> new CropBlock(properties.strength(0.25F)));
 
     public static final Block AMERICAN_BEECH_SLAB = registerBlock("american_beech_slab",
-            properties -> new SlabBlock(properties.strength(2.0f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO_WOOD)));
+            properties -> new SlabBlock(properties.strength(2.0f).requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));
 
     public static final Block AMERICAN_BEECH_STAIRS = registerBlock("american_beech_stairs",
             properties -> new StairBlock(FeverBlocks.AMERICAN_BEECH_PLANKS.defaultBlockState(),
-                    properties.strength(3f).sound(SoundType.FLOWERING_AZALEA)));
+                    properties.strength(3f).sound(SoundType.CHERRY_WOOD)));
 
 
 

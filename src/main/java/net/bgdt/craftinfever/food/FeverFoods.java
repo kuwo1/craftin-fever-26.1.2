@@ -13,6 +13,7 @@ public class FeverFoods {
     public static final FoodProperties POPCORN = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f).build();
     public static final FoodProperties OMELETTE = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f).build();
     public static final FoodProperties CIDER = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f).build();
+    public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f).build();
 
     public static final Consumable STRAWBERRY_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200), 0.15f)).build();
@@ -23,5 +24,7 @@ public class FeverFoods {
     public static final Consumable OMELETTE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200), 0.15f)).build();
     public static final Consumable CIDER_CONSUMABLE = Consumables.defaultDrink()
+            .consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200), 0.15f)).build();
+    public static final Consumable CORN_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200), 0.15f)).build();
 }

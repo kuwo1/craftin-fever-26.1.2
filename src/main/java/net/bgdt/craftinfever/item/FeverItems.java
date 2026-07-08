@@ -24,6 +24,8 @@ public class FeverItems {
             .food(FeverFoods.OMELETTE, FeverFoods.OMELETTE_CONSUMABLE)));
     public static final Item CIDER = registerItem("cider", properties -> new Item(properties
             .food(FeverFoods.CIDER, FeverFoods.CIDER_CONSUMABLE)));
+    public static final Item CORN = registerItem("corn", properties -> new Item(properties
+            .food(FeverFoods.CORN, FeverFoods.CORN_CONSUMABLE)));
 
 
 
@@ -51,6 +53,7 @@ public class FeverItems {
             fabricCreativeModeTabOutput.accept(FELT);
             fabricCreativeModeTabOutput.accept(GRAPES);
             fabricCreativeModeTabOutput.accept(CIDER);
+            fabricCreativeModeTabOutput.accept(CORN);
         });
 
 

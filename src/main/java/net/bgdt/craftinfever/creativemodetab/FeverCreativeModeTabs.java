@@ -24,6 +24,7 @@ public class FeverCreativeModeTabs {
                         output.accept(FeverItems.GRAPES);
                         output.accept(FeverItems.POPCORN);
                         output.accept(FeverItems.CIDER);
+                        output.accept(FeverItems.CORN);
                     })
                     .build());
 

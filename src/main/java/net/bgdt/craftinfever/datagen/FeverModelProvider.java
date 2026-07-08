@@ -42,6 +42,8 @@ public class FeverModelProvider extends FabricModelProvider {
         blockModelGenerators.createDoor(FeverBlocks.AMERICAN_BEECH_DOOR);
         blockModelGenerators.createTrapdoor(FeverBlocks.AMERICAN_BEECH_TRAPDOOR);
 
+        blockModelGenerators.createBarsAndItem(FeverBlocks.CHICKEN_WIRE);
+
 
 
 

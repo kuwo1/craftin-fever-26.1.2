@@ -40,6 +40,7 @@ public class FeverBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(FeverBlocks.COARSE_SAND);
         dropSelf(FeverBlocks.GRAPE_BUSH);
         dropSelf(FeverBlocks.AMERICAN_BEECH_TRAPDOOR);
+        dropSelf(FeverBlocks.CHICKEN_WIRE);
 
         add(FeverBlocks.AMERICAN_BEECH_DOOR, this::createDoorTable);
 

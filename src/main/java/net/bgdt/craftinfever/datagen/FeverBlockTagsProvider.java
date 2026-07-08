@@ -68,6 +68,9 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
         valueLookupBuilder(BlockTags.TRAPDOORS)
                 .add(FeverBlocks.AMERICAN_BEECH_TRAPDOOR);
 
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(FeverBlocks.CHICKEN_WIRE);
+
 
 
     }

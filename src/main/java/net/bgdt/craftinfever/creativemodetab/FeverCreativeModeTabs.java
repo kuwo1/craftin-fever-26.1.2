@@ -23,6 +23,7 @@ public class FeverCreativeModeTabs {
                         output.accept(FeverItems.FELT);
                         output.accept(FeverItems.GRAPES);
                         output.accept(FeverItems.POPCORN);
+                        output.accept(FeverItems.CIDER);
                     })
                     .build());
 
@@ -56,6 +57,7 @@ public class FeverCreativeModeTabs {
                             output.accept(FeverBlocks.COARSE_GRASS);
                             output.accept(FeverBlocks.COARSE_SAND);
                             output.accept(FeverBlocks.COARSE_GRAVEL);
+                            output.accept(FeverBlocks.CHICKEN_WIRE);
 
                             output.accept(FeverBlocks.AMERICAN_BEECH_SLAB);
                             output.accept(FeverBlocks.AMERICAN_BEECH_STAIRS);

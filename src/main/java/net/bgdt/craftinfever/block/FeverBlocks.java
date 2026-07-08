@@ -113,6 +113,9 @@ public class FeverBlocks {
             properties -> new StairBlock(FeverBlocks.AMERICAN_BEECH_PLANKS.defaultBlockState(),
                     properties.strength(3f).sound(SoundType.CHERRY_WOOD)));
 
+    public static final Block CHICKEN_WIRE = registerBlock("chicken_wire",
+            properties -> new IronBarsBlock(properties.strength(4f).sound(SoundType.LANTERN).requiresCorrectToolForDrops()));
+
 
 
     //public static final SaplingBlock AMERICAN_BEECH_SAPLING = registerBlock("american_beech_sapling",

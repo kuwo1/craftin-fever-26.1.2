@@ -8,11 +8,13 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.references.ItemIds;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 
+import java.awt.*;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -34,8 +36,8 @@ public class FeverRecipeProvider extends FabricRecipeProvider {
                         .pattern("AFA")
                         .pattern(" A ")
                         .define('A', FeverItems.FELT)
-                        .define('F', Blocks.WHITE_WOOL)
-                        .unlockedBy(getHasName(Blocks.WHITE_WOOL), has(Blocks.WHITE_WOOL))
+                        .define('F', Blocks.WOOL)
+                        .unlockedBy(getHasName(ItemIds.), has(Blocks.WHITE_WOOL))
                         .group("wool")
                         .save(output, "white_quilt_block");
                 shaped(RecipeCategory.MISC, FeverBlocks.BLACK_QUILT_BLOCK,4)

@@ -18,7 +18,7 @@ public class CornCropBlock extends BeetrootBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return
+        return super.getBaseSeedId();
     }
 
     @Override

@@ -15,64 +15,62 @@ public class FeverBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        valueLookupBuilder(BlockTags.WOOL)
-                .add(FeverBlocks.BLACK_QUILT_BLOCK)
-                .add(FeverBlocks.WHITE_QUILT_BLOCK)
-                .add(FeverBlocks.GRAY_QUILT_BLOCK)
-                .add(FeverBlocks.LIGHT_GRAY_QUILT_BLOCK)
-                .add(FeverBlocks.LIGHT_BLUE_QUILT_BLOCK)
-                .add(FeverBlocks.BLUE_QUILT_BLOCK)
-                .add(FeverBlocks.PURPLE_QUILT_BLOCK)
-                .add(FeverBlocks.PINK_QUILT_BLOCK)
-                .add(FeverBlocks.BROWN_QUILT_BLOCK)
-                .add(FeverBlocks.YELLOW_QUILT_BLOCK)
-                .add(FeverBlocks.RED_QUILT_BLOCK)
-                .add(FeverBlocks.ORANGE_QUILT_BLOCK)
-                .add(FeverBlocks.GREEN_QUILT_BLOCK)
-                .add(FeverBlocks.LIME_QUILT_BLOCK)
-                .add(FeverBlocks.CYAN_QUILT_BLOCK)
-                .add(FeverBlocks.MAGENTA_QUILT_BLOCK);
+        tag(BlockTags.WOOL)
+                .add(FeverBlocks.getRK(FeverBlocks.BLACK_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.WHITE_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.GRAY_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.LIGHT_GRAY_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.LIGHT_BLUE_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.BLUE_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.PURPLE_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.PINK_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.BROWN_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.YELLOW_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.RED_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.ORANGE_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.GREEN_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.LIME_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.CYAN_QUILT_BLOCK))
+                .add(FeverBlocks.getRK(FeverBlocks.MAGENTA_QUILT_BLOCK));
 
 
-        valueLookupBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(FeverBlocks.AMERICAN_BEECH_LOG);
+        
+        tag(BlockTags.LOGS)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_LOG));
 
-        valueLookupBuilder(BlockTags.LOGS)
-                .add(FeverBlocks.AMERICAN_BEECH_LOG);
+        tag(BlockTags.LEAVES)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_LEAVES));
 
-        valueLookupBuilder(BlockTags.LEAVES)
-                .add(FeverBlocks.AMERICAN_BEECH_LEAVES);
+        tag(BlockTags.PLANKS)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_PLANKS));
 
-        valueLookupBuilder(BlockTags.PLANKS)
-                .add(FeverBlocks.AMERICAN_BEECH_PLANKS);
+        tag(BlockTags.SLABS)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_SLAB));
 
-        valueLookupBuilder(BlockTags.SLABS)
-                .add(FeverBlocks.AMERICAN_BEECH_SLAB);
+        tag(BlockTags.STAIRS)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_STAIRS));
 
-        valueLookupBuilder(BlockTags.STAIRS)
-                .add(FeverBlocks.AMERICAN_BEECH_STAIRS);
+        tag(BlockTags.LEAVES)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_LEAVES));
 
-        valueLookupBuilder(BlockTags.LEAVES)
-                .add(FeverBlocks.AMERICAN_BEECH_LEAVES);
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_LOG))
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_PLANKS));
 
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_AXE)
-                .add(FeverBlocks.AMERICAN_BEECH_LOG)
-                .add(FeverBlocks.AMERICAN_BEECH_PLANKS);
+        tag(BlockTags.CROPS)
+                .add(FeverBlocks.getRK(FeverBlocks.GRAPE_BUSH));
 
-        valueLookupBuilder(BlockTags.CROPS)
-                .add(FeverBlocks.GRAPE_BUSH);
+        tag(BlockTags.DOORS)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_DOOR));
 
-        valueLookupBuilder(BlockTags.DOORS)
-                .add(FeverBlocks.AMERICAN_BEECH_DOOR);
+        tag(BlockTags.TRAPDOORS)
+                .add(FeverBlocks.getRK(FeverBlocks.AMERICAN_BEECH_TRAPDOOR));
 
-        valueLookupBuilder(BlockTags.TRAPDOORS)
-                .add(FeverBlocks.AMERICAN_BEECH_TRAPDOOR);
-
-        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(FeverBlocks.CHICKEN_WIRE);
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(FeverBlocks.getRK(FeverBlocks.CHICKEN_WIRE));
 
 
 
     }
 }
-//lalala
+

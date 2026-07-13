@@ -122,6 +122,11 @@ public class FeverBlocks {
     //public static final SaplingBlock AMERICAN_BEECH_SAPLING = registerBlock("american_beech_sapling",
      //       properties -> new SaplingBlock());
 
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
+
+
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, ? extends Block> function) {
